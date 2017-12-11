@@ -7,7 +7,7 @@ facing forward. There is also a color sensor placed underneath the robot. Finall
 information can be displayed. Below you'll find information about the different folders.
 
 
-# StraightLine:
+# StraightLine
 The files in this folder are used to make the robot move in a straight line. There are two parameters, PARAM_X and PARAM_Y, which are
 defined in StraightLine.ino. Those values can be changed to make the robot travel a given distance while also being a given a time limit
 to complete the distance given. The robot can only move at a maximum of 0.80 rotations per second. If the distance and time combination
