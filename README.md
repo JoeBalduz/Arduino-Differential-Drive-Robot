@@ -14,4 +14,5 @@ to complete the distance given. The robot can only move at a maximum of 0.80 rot
 require the robot to go faster than possible, it will display a message on the LCD display that the movement is impossible. Before running
 StraightLine.ino, the robot will have to be calibrated. There is an if statement in StraightLine.ino that has a function called 
 calibrate() commented out. The calibrate() function must be run once. After that, the values that calibrate got will be stored into the 
-robot's memory so the function can be commented out afterwards.
+robot's memory so the function can be commented out afterwards. The robot will wait until the select button is pressed to begin its
+movement.
