@@ -5,7 +5,7 @@ that it is possible to find out how many rotations a wheel has done. There are t
 The short distance sensors are placed facing forward, to the left, and to the right of the robot. The long distance sensor is placed
 facing forward. There is also a color sensor placed underneath the robot. Finally, the robot also has an LCD display on top of it so that
 information can be displayed. Below you'll find information about the different folders. Before any of the programs are run, the robot 
-must calibrated. The calibrate functions allows the robot to be sent an RPS that it should go at instead of sending it the length of the 
+must calibrated. The calibrate function allows the robot to be sent an RPS that it should go at instead of sending it a length of the 
 pulse width. StraightLine and SShape will both run the calibrate() function as long as that function is not commented out in their
 respective .ino files. It only needs to be run once since the values the robot got from calibrate() will be stored in the robot's memory
 afterwards.
