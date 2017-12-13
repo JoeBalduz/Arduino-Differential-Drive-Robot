@@ -26,3 +26,10 @@ rotations per second, the robot will display a message on the LCD display that t
 the select button is pressed to begin its movement. Once it makes half of the S shape, it will stop and wait for another select press.
 When it is pressed the second time, the robot will complete the S shape. The entire S shape will be completed in the time specified by
 PARAM_Y.
+
+# WallDistance
+The files in this folder are used to make the robot move a given distance away from a wall. The parameter desiredDistance can be changed 
+to anything from 2-10 inches since only the front short distance sensor is being used. When the program starts, the robot will either move 
+away or towards a wall to position itself whatever distance was given away from the wall. If the robot overshoots the desired distance, it 
+will correct itself thanks to PID control. For this program to work correctly, the robot must have fully charged batteries, otherwise the
+sensors will return incorrect readings.
