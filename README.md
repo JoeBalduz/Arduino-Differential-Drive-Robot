@@ -21,7 +21,20 @@ If mapping is chosen, you will be able to enter in the starting location and ori
 exit has been selected, the robot will begin to the map the maze by doing a DFS. The robot uses all of its sensors to detect if there
 are walls in a cell that it is in. It also uses its sensor to ensure that it stays as centered as possible in the cell that is in.
 The robot knows if it has entered a new cell by using its color sensor. If the robot crosses either blue or red tape, it means that it
-has entered a new cell. Once every cell has been visited, mapping will be complete. The robot will display "DONE!" on the LCD.
+has entered a new cell. Once every cell has been visited, mapping will be complete. The robot will display "DONE!" on the LCD. The
+select button can then be pressed to verify that the robot mapped the maze correctly. The robot will display whether there is a wall "W"
+or whether there is no wall "o" on the LCD for each cell. Each 4 sections of the LCD is one cell. The order of the sides of the cell
+goes west, north, east, and south. Only the first 8 grid cells will be displayed. The select button will have to pressed again to show
+the last 8 cell. This is because the LCD is not big enough to show all the cells at once. When the select button is then pressed again,
+the program will exit and you will be brought back to the selection screen. If anytime during the mapping the robot messes up, the 
+select button can be pressed and the program will exit.
+
+If path planning is chosen, you will be able to enter in the starting location, ending location, and orientation into the robot using
+the buttons on the LCD. Once exit has been selected, the robot will begin to find the shorest path between the two given locations using
+a BFS. If mapping was not selected beforehand, the robot will perform the BFS on a map that is already loaded into the robot. To load a
+map into the robot, edit the function loadMap() in robot.h. There is information there that will tells how to load in the map correctly.
+Once the BFS is completed, the robot will begin to follow the shortest path that was found. When the robot has made it to the ending
+location, you will be brought back to the selection screen.
 
 # StraightLine
 The files in this folder are used to make the robot move in a straight line. There are two parameters, PARAM_X and PARAM_Y, which are
