@@ -10,6 +10,19 @@ the pulse width. StraightLine and SShape will both run the calibrate() function 
 respective .ino files. It only needs to be run once since the values the robot got from calibrate() will be stored in the robot's memory
 afterwards.
 
+# Maze
+The files in this folder are used to make the robot map a maze and then plan the shortest path between a given starting point and an
+ending point. The maze used is a 4x4 maze. Each cell in the maze has a width of about 16 inches. Each cell is also separated by red tape
+horizontally and blue tape vertically. Before running this program, the robot must be calibrated. Since memory became an issue in this 
+program, if the robot has been calibrated using any of the other programs, it must be recalibrated. When the program starts, you are 
+able to choose either mapping or path planning. 
+
+If mapping is chosen, you will be able to enter in the starting location and oriention into the robot using the buttons on the LCD. Once
+exit has been selected, the robot will begin to the map the maze by doing a DFS. The robot uses all of its sensors to detect if there
+are walls in a cell that it is in. It also uses its sensor to ensure that it stays as centered as possible in the cell that is in.
+The robot knows if it has entered a new cell by using its color sensor. If the robot crosses either blue or red tape, it means that it
+has entered a new cell. Once every cell has been visited, mapping will be complete. The robot will display "DONE!" on the LCD.
+
 # StraightLine
 The files in this folder are used to make the robot move in a straight line. There are two parameters, PARAM_X and PARAM_Y, which are
 defined in StraightLine.ino. Those values can be changed to make the robot travel a given distance while also being given a time limit
