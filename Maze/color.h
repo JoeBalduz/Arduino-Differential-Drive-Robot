@@ -43,7 +43,7 @@ int getColor()
   lcd.setCursor(0, 0);
 
   //Returns 2 if a blue or red is detected, 0 if it's a different color. Knowing whether the color was red or blue is not important.
-  //It also flashes the LCD display blue or red
+  //It also flashes the LCD blue or red
   if(redFrequency < 46 && greenFrequency > blueFrequency && greenFrequency > 75 && redFrequency < blueFrequency)
   {
     lcd.setBacklight(RED);
