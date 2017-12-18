@@ -15,7 +15,8 @@ The files in this folder are used to make the robot map a maze and then plan the
 ending point. The maze used is a 4x4 maze. Each cell in the maze has a width of about 16 inches. Each cell is also separated by red tape
 horizontally and blue tape vertically. Before running this program, the robot must be calibrated. Since memory became an issue in this 
 program, if the robot has been calibrated using any of the other programs, it must be recalibrated. When the program starts, you are 
-able to choose either mapping or path planning. 
+able to choose either mapping or path planning. Both functions display the robot's location and orientation on the LCD. The cells that
+it has visited are also displayed on the LCD. "O" means that a cell hasn't been visited while "X" means that a cell has been visited.
 
 If mapping is chosen, you will be able to enter in the starting location and oriention into the robot using the buttons on the LCD. Once
 exit has been selected, the robot will begin to the map the maze by doing a DFS. The robot uses all of its sensors to detect if there
