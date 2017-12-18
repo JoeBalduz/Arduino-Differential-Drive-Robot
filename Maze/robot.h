@@ -2,7 +2,7 @@
 #include "MySharpSensor.h"
 #include "color.h"
 
-String visitedLocations = "OOOOOOOOOOOOOOOO";   //This gets display on the LCD display. It tells which cells have been visited
+String visitedLocations = "OOOOOOOOOOOOOOOO";   //This gets display on the LCD. It tells which cells have been visited
 
 struct robot{
   int orientation = 0;  //0(west), 1(north), 2(east), 3(south)
@@ -168,7 +168,7 @@ void travelToMid()
   setSpeedsIPS(0, 0);
 }
 
-//Updates the LCD display
+//Updates the LCD
 void updateDisplay()
 {
   visitedLocations[myRobot.cellLocation - 1] = 'X';   //Marks the location as visited in the display
