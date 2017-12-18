@@ -5,7 +5,7 @@
 #define PARAM_X 10 //Inches
 #define PARAM_Y 4  //Seconds
 
-Adafruit_RGBLCDShield lcd = Adafruit_RGBLCDShield();  //Initializes the LCD display
+Adafruit_RGBLCDShield lcd = Adafruit_RGBLCDShield();  //Initializes the LCD 
 float wheel_circumference = 2.61 * 3.14;
 bool first = true;
 float counts[2];  //Holds tick count for each wheel
@@ -44,7 +44,7 @@ void loop() {
     float maximum_check = IPS/wheel_circumference;
 
     //Check if the RPS is above the robot's maximum RPS
-    //Displays a message on the LCD display if the speed is not possible for the robot
+    //Displays a message on the LCD if the speed is not possible for the robot
     if(maximum_check > 0.8)
     {
       lcd.print("Cannot complete");
